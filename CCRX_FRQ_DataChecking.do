@@ -275,7 +275,6 @@ label var pp_method_value						"Value in days, months or years"
 label var pp_method_yn							"Used something to avoid/delay pregnancy post most recent birth"
 label var pp_method								"Method used post most recent birth"
 
-label var	fp_ad_radio			"Heard about FP on radio"
 label var	fp_ad_tv				"Heard about FP on television"
 label var	fp_ad_magazine			"Read about FP in newspaper/magazine"
 label var   fp_ad_call              "Receive FP in voice or text message"
@@ -356,7 +355,7 @@ foreach var of varlist your_name_check system_date_check location_con name_check
 	future_user_not_current future_user_pregnant recent_user fp_side_effects ///
 	fp_side_effects_instructions fp_told_other_methods fp_obtain_desired return_to_provider ///
 	refer_to_relative visited_by_health_worker visited_a_facility facility_fp_discussion ///
-	fp_ad_radio fp_ad_tv fp_ad_magazine fp_ad_call fp_ever_user penultimate_method_yn pp_method_yn ///
+	fp_ad_tv fp_ad_magazine fp_ad_call fp_ever_user penultimate_method_yn pp_method_yn ///
 	partner_know emergency_12mo_yn {
 	
 	encode `var', gen(`var'v2) lab(yes_no_dnk_nr_list)
